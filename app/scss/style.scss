@@ -1,0 +1,242 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+
+
+@import "media";
+
+html{
+    max-width: 1920px;
+}
+
+.container{
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    height: 60px;
+    background-color: #000;
+    
+}
+
+.header__content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__inner{
+    width: 250px;
+}
+
+.logo{
+    margin-top: 6px;
+}
+
+.logo__descr{
+    position: relative;
+    bottom: 16px;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+.header__list{
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    & a{
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+.main{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 950px;
+}
+
+.main__content{
+    position: relative;
+    padding-top: 280px;
+    text-align: right;
+}
+
+.main__title{   
+    color: #fff;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.form__title{
+    margin-top: 50px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.feed-form{
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    input{
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        font-size: 25px;
+        padding: 0 15px;
+        border: none;
+    }
+}
+
+.button__submit{
+    margin-top: 30px;
+    width: 400px;
+    height: 60px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, rgb(16, 235, 243) 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.speackers{
+    background: linear-gradient(to top, rgb(83, 81, 81) 0%, rgb(0,0,0, ) 100%);
+    width: 100%;
+    min-height: 1080px;
+    text-align: center;
+}
+
+
+.speackers__inner{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.speacker__name{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.speackers__title{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 80px;
+    display: inline-block;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.speacker-1__photo{
+    background-image: url(../images/bezos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.speacker-2__photo{
+    background-image: url(../images/mask.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.speacker-3__photo{
+    background-image: url(../images/cukerberg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.speacker__info{
+    text-align: center;
+}
+
+.speacker__info-descr{
+    margin-top: 30px;
+    width: 380px;
+    font-size: 22px;
+}
+
+.speacker__info-theme {
+    margin-top: 10px;
+    width: 380px;
+    font-size: 22px;
+}
+
+
+.footer{
+    position: relative;
+    height: 640px;
+    &__info{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 180px;
+        background-color: #c70101;
+        padding: 15px 68px 15px 68px;
+        text-align: center;
+    }
+    &__adr{
+        color: #fff;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 20px;
+        &__footer__adr-t{
+            font-style: regular;
+        }
+    }
+    &__phone{
+        color: #fff;
+        font-size: 30px;
+        line-height: 40px;
+        display: block;
+        margin-top: 15px;
+    }
+    &__email{
+        display: block;
+        margin-top: 15px;
+        color: #fff;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+}
+
+
+
+
